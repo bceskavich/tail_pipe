@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :back_pipe, key: :value
+#     config :tail_pipe, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:back_pipe, :key)
+#     Application.get_env(:tail_pipe, :key)
 #
 # You can also configure a 3rd-party app:
 #

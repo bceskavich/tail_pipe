@@ -1,10 +1,10 @@
-defmodule BackPipe.MixProject do
+defmodule TailPipe.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :back_pipe,
-      name: "BackPipe",
+      app: :tail_pipe,
+      description: "A simple backwards pipe operator for Elixir",
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
@@ -23,15 +23,14 @@ defmodule BackPipe.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps() do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
   defp package() do
     [
       licenses: ["MIT"],
-      links: %{"GitHub" => "TK"}
+      links: %{"GitHub" => "https://github.com/bceskavich/tail_pipe"}
     ]
   end
 end

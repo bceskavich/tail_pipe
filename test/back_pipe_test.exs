@@ -1,6 +1,6 @@
-defmodule BackPipeTest do
+defmodule TailPipeTest do
   use ExUnit.Case
-  import BackPipe
+  import TailPipe
 
   describe "~>/2" do
     test "It pipes the left-hand side into the last position of the right hand side function call" do
